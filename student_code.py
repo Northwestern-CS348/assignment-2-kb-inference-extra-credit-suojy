@@ -165,7 +165,7 @@ class KnowledgeBase(object):
         # Student code goes here
         if isinstance(fact_or_rule,Fact):
             if not self._get_fact(fact_or_rule):
-                return "Fact is not in the KB";
+                return "Fact is not in the KB"
             string = "fact: "+str(fact_or_rule.statement)
             #if fact_or_rule.asserted:
                 #string+=" Asserted"
@@ -177,7 +177,7 @@ class KnowledgeBase(object):
                 self.helper(fact_or_rule,string,depth)
         elif isinstance(fact_or_rule,Rule):
             if not self._get_rule(fact_or_rule):
-                return "Rule is not in the KB";
+                return "Rule is not in the KB"
             string = "rule: ("
             for i in range(len(fact_or_rule.lhs)):
                 string += str(fact_or_rule.lhs[i])
