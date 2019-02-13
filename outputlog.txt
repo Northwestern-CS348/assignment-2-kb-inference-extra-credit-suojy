@@ -1,0 +1,12 @@
+TESTS WITH ERRORS 
+-------------------------------
+TESTS FAILED  
+test03 (gradingtests.UnitTests)
+Traceback (most recent call last):
+  File "/Users/k2i/academics/automatedgradingapp/app/testing/kb-inference-ec/gradingtests.py", line 73, in test03
+    self.assertEqual(self.KB.kb_explain(fact4), answer1)
+AssertionError: None != 'fact: (covered B)\n  SUPPORTED BY\n    f[304 chars]ED\n'
+
+-------------------------------
+TESTS SKIPPED 
+-------------------------------
